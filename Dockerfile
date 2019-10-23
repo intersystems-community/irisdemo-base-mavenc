@@ -2,7 +2,7 @@
 # Since IRIS JDBC Driver is not available/up-to-date on Maven, we will rely on IRIS Community to extract
 # the latest JDBC Driver available instead.
 #
-FROM store/intersystems/iris-community:2019.3.0.309.0
+FROM intersystemsdc/irisdemo-base-irisint-community:iris-community.2019.3.0.309.0
 
 FROM openjdk:8-jdk-alpine
 
