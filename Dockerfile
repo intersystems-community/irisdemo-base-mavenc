@@ -2,7 +2,8 @@
 # Since IRIS JDBC Driver is not available/up-to-date on Maven, we will rely on IRIS Community to extract
 # the latest JDBC Driver available instead.
 #
-FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2019.4.0.379.0
+#FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2019.4.0.379.0
+FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2020.1.0.197.0
 
 FROM openjdk:8-jdk-alpine
 
@@ -36,16 +37,16 @@ RUN apk --update --no-cache add curl
 WORKDIR /irislib
 COPY --from=0 /usr/irissys/dev/java/lib/JDK18/*.jar /irislib/
 
-RUN mvn install:install-file -Dfile=/irislib/intersystems-jdbc-3.0.0.jar \
+RUN mvn install:install-file -Dfile=/irislib/intersystems-jdbc-3.1.0.jar \
 -DgroupId=com.intersystems \
 -DartifactId=intersystems-jdbc \
--Dversion=3.0.0 \
+-Dversion=3.1.0 \
 -Dpackaging=jar \
 -DcreateChecksum=true && \
-mvn install:install-file -Dfile=/irislib/intersystems-xep-3.0.0.jar \
+mvn install:install-file -Dfile=/irislib/intersystems-xep-3.1.0.jar \
 -DgroupId=com.intersystems \
 -DartifactId=intersystems-xep \
--Dversion=3.0.0 \
+-Dversion=3.1.0 \
 -Dpackaging=jar \
 -DcreateChecksum=true
 
