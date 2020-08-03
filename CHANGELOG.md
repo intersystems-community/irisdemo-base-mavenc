@@ -1,3 +1,6 @@
+## 1.3.1 (August 03, 2020)
+  - Adding utils jar to maven
+
 ## 1.3.0 (August 03, 2020)
   - Bumping IRIS jar files version to 3.2.0 from IRIS 2020.3.0.200.0
 
