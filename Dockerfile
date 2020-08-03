@@ -55,8 +55,13 @@ mvn install:install-file -Dfile=/irislib/intersystems-gateway-3.2.0.jar \
 -DartifactId=intersystems-gateway \
 -Dversion=3.2.0 \
 -Dpackaging=jar \
+-DcreateChecksum=true && \
+mvn install:install-file -Dfile=/irislib/intersystems-utils-3.2.0.jar \
+-DgroupId=com.intersystems \
+-DartifactId=intersystems-utils \
+-Dversion=3.2.0 \
+-Dpackaging=jar \
 -DcreateChecksum=true
-
 # End of Section 3
 
 # Configuring make
