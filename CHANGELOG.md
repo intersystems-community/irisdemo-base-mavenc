@@ -1,3 +1,6 @@
+## 1.3.0 (August 03, 2020)
+  - Bumping IRIS jar files version to 3.2.0 from IRIS 2020.3.0.200.0
+
 ## 1.2.0 (April 21, 2020)
   - Based on IRIS 2020.2.0.196.0
 
