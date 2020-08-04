@@ -1,3 +1,6 @@
+## 1.4.0 (August 04, 2020)
+  - Making it based on IRIS 2020.4.0ETL.130.0
+
 ## 1.3.1 (August 03, 2020)
   - Adding utils jar to maven
 
