@@ -1,3 +1,7 @@
+## 1.5.0 (August 12, 2020)
+  - Based on IRIS Community 2020.3.0AA.331.0
+  - Ok
+
 ## 1.4.0 (August 04, 2020)
   - Making it based on IRIS 2020.4.0ETL.130.0
 
