@@ -4,7 +4,8 @@
 #
 #FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2019.4.0.379.0
 # FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2020.1.0.197.0
-FROM intersystemsdc/irisdemo-base-irisint-community:iris-community.2020.3.0.200.0
+# FROM intersystemsdc/irisdemo-base-irisint-community:iris-community.2020.3.0.200.0
+FROM intersystemsdc/irisdemo-base-irisint-community:iris-community.2021.1.0.215.0
 
 FROM openjdk:8-jdk-alpine
 
