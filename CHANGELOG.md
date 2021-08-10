@@ -1,3 +1,6 @@
+## 1.4.0 (August 10, 2021)
+  - Bumping IRIS version to 2021.1.0.215.0
+
 ## 1.3.1 (August 03, 2020)
   - Adding utils jar to maven
 
