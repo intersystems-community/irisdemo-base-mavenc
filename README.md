@@ -11,7 +11,7 @@ The list bellow presents the versions of Jar files:
   * intersystems-jdbc-3.3.0.jar
   * intersystems-xep-3.2.0.jar
   * intersystems-utils-3.3.0.jar
-* Version 1.5.0
+* Version 1.6.0
   * iris-community.2021.2.0.619.0
   * intersystems-jdbc-3.3.0.jar
   * intersystems-xep-3.2.0.jar
