@@ -5,7 +5,8 @@
 #FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2019.4.0.379.0
 # FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2020.1.0.197.0
 # FROM intersystemsdc/irisdemo-base-irisint-community:iris-community.2020.3.0.200.0
-FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2021.1.0.215.0
+# FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2021.2.0.215.0
+FROM intersystemsdc/irisdemo-base-irisdb-community:iris-community.2021.2.0.619.0
 
 FROM openjdk:8-jdk-alpine
 
@@ -37,12 +38,12 @@ RUN apk --update --no-cache add curl
 # Section 3 - IRIS Specific
 
 WORKDIR /irislib
-COPY --from=0 /usr/irissys/dev/java/lib/JDK18/*.jar /irislib/
+COPY --from=0 /usr/irissys/dev/java/lib/1.8/*.jar /irislib/
 
-RUN mvn install:install-file -Dfile=/irislib/intersystems-jdbc-3.2.0.jar \
+RUN mvn install:install-file -Dfile=/irislib/intersystems-jdbc-3.3.0.jar \
 -DgroupId=com.intersystems \
 -DartifactId=intersystems-jdbc \
--Dversion=3.2.0 \
+-Dversion=3.3.0 \
 -Dpackaging=jar \
 -DcreateChecksum=true && \
 mvn install:install-file -Dfile=/irislib/intersystems-xep-3.2.0.jar \
@@ -51,10 +52,22 @@ mvn install:install-file -Dfile=/irislib/intersystems-xep-3.2.0.jar \
 -Dversion=3.2.0 \
 -Dpackaging=jar \
 -DcreateChecksum=true && \
-mvn install:install-file -Dfile=/irislib/intersystems-utils-3.2.0.jar \
+mvn install:install-file -Dfile=/irislib/intersystems-utils-3.3.0.jar \
 -DgroupId=com.intersystems \
 -DartifactId=intersystems-utils \
 -Dversion=3.2.0 \
+-Dpackaging=jar \
+-DcreateChecksum=true && \
+mvn install:install-file -Dfile=/irislib/intersystems-spark-3.2.0.jar \
+-DgroupId=com.intersystems \
+-DartifactId=intersystems-spark \
+-Dversion=3.2.0 \
+-Dpackaging=jar \
+-DcreateChecksum=true && \
+mvn install:install-file -Dfile=/irislib/intersystems-loader-1.0.1.jar \
+-DgroupId=com.intersystems \
+-DartifactId=intersystems-loader \
+-Dversion=1.0.1 \
 -Dpackaging=jar \
 -DcreateChecksum=true
 
