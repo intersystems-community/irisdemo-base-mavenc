@@ -1,4 +1,4 @@
-## 1.5.0 (December 28, 2021)
+## 1.6.0 (December 28, 2021)
   - Bumping IRIS version to 2021.2.0.619.0
 
 ## 1.4.1 (August 10, 2021)
