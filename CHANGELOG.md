@@ -1,3 +1,6 @@
+## 1.6.4 (February 09, 2022)
+  - Bumping IRIS version to 2021.2.0.651.0
+
 ## 1.6.3 (January 25, 2022)
   - Utils library is bumped to 3.3.0
 
